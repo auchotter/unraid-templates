@@ -1,0 +1,35 @@
+<Container version="2">
+  <Name>Valheim-Kartograph</Name>
+  <Repository>ghcr.io/auchotter/valheim-kartograph:latest</Repository>
+  <Registry>https://github.com/auchotter/valheim-kartograph/pkgs/container/valheim-kartograph</Registry>
+  <Network>bridge</Network>
+
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+
+  <Icon>https://raw.githubusercontent.com/auchotter/valheim-kartograph/main/client/src/assets/ui/compass-rose.png</Icon>
+
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+
+  <Overview>Valheim Kartograph is a self-hosted collaborative mapping tool for Valheim. Draw biomes, paths, markers and notes on a shared no-map world, with realtime updates across multiple devices.</Overview>
+
+  <Project>https://github.com/auchotter/valheim-kartograph</Project>
+
+  <TemplateURL>https://raw.githubusercontent.com/auchotter/valheim-kartograph-unraid/main/templates/valheim-kartograph.xml</TemplateURL>
+
+  <ReadMe>https://raw.githubusercontent.com/auchotter/valheim-kartograph/main/README.md</ReadMe>
+
+  <Category>Tools:</Category>
+
+  <ExtraSearchTerms>Valheim map mapping cartography no-map collaborative</ExtraSearchTerms>
+
+  <Requires>No built-in authentication. Use only on a trusted/private network unless protected by an external authentication layer. The appdata directory must be writable by container UID/GID 10001.</Requires>
+
+  <Changes>Initial Community Applications release.</Changes>
+  <Date>2026-09-18</Date>
+
+  <License>Apache-2.0 with Commons Clause</License>
+
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="HTTP port for the Valheim Kartograph web interface." Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/valheim-kartograph" Mode="rw" Description="Persistent SQLite database and application data." Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>

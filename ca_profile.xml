@@ -1,0 +1,7 @@
+<CommunityApplications>
+  <Profile>
+    Valheim Kartograph is a self-hosted collaborative mapping tool for Valheim. This repository maintains the Unraid Community Applications template for installing and updating Valheim Kartograph. For documentation, source code, releases, or support, visit the project repository on GitHub.
+  </Profile>
+
+  <WebPage>https://github.com/auchotter/valheim-kartograph</WebPage>
+</CommunityApplications>
