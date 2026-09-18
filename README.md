@@ -12,7 +12,7 @@ Image:
 
 Default WebUI port:
 
-`3000`
+`2998`
 
 Persistent application data:
 
