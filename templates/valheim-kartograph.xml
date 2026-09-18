@@ -16,7 +16,7 @@
 
   <Project>https://github.com/auchotter/valheim-kartograph</Project>
 
-  <TemplateURL>https://raw.githubusercontent.com/auchotter/valheim-kartograph-unraid/main/templates/valheim-kartograph.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/auchotter/unraid-templates/main/templates/valheim-kartograph.xml</TemplateURL>
 
   <ReadMe>https://raw.githubusercontent.com/auchotter/valheim-kartograph/main/README.md</ReadMe>
 
