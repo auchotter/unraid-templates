@@ -6,6 +6,7 @@
 
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <ExtraParams>--user 99:100</ExtraParams>
 
   <Icon>https://raw.githubusercontent.com/auchotter/valheim-kartograph/main/client/src/assets/ui/compass-rose.png</Icon>
 
@@ -23,13 +24,13 @@
 
   <ExtraSearchTerms>Valheim map mapping cartography no-map collaborative</ExtraSearchTerms>
 
-  <Requires>No built-in authentication. Use only on a trusted/private network unless protected by an external authentication layer. The appdata directory must be writable by container UID/GID 10001.</Requires>
+  <Requires>No built-in authentication. Use only on a trusted/private network unless protected by an external authentication layer. Persistent data is stored in the configured appdata directory.</Requires>
 
   <Changes>Initial Community Applications release.</Changes>
   <Date>2026-09-18</Date>
 
   <License>Apache-2.0 with Commons Clause</License>
 
-  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="HTTP port for the Valheim Kartograph web interface." Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="WebUI" Target="3000" Default="2998" Mode="tcp" Description="HTTP port for the Valheim Kartograph web interface." Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/valheim-kartograph" Mode="rw" Description="Persistent SQLite database and application data." Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
